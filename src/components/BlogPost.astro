@@ -1,0 +1,20 @@
+---
+const { title, url, image } = Astro.props;
+---
+ <style>
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: 2rem; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    /* min-width: 150px; */
+  }
+
+  img {
+    border-radius: 10px;
+  }
+</style>
+<li><a href={url}><div><img src={image} width="300" alt={image.alt} /><p>{title}</p></div></a></li>
