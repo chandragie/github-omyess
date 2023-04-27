@@ -10,7 +10,8 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
     flex-direction: row;
     gap: 1rem;
     width: 100%;
-    /* flex-wrap: wrap; */
+    padding-inline-start:0px;
+    flex-wrap: wrap;
   }
 </style>
 <BaseLayout pageTitle={pageTitle}>
